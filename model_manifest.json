@@ -1,0 +1,19 @@
+{
+  "model_name": "poker44-signal-detector",
+  "model_version": "1",
+  "framework": "feedforward-mlp",
+  "license": "MIT",
+  "repo_url": "https://github.com/IanPereraFlo/poker-d3",
+  "artifact_sha256": "ef6138b0921d26147b0145f8c18eb7329efc2b62dbadca75a271b1c4f0b28fb5",
+  "open_source": true,
+  "inference_mode": "local-joblib",
+  "data_attestation": "No validator-private evaluation labels are used for training. Training uses released benchmark data and local runtime features.",
+  "implementation_files": [
+    "neurons/miner.py",
+    "src/poker44_model_base/loader.py",
+    "poker44_ml/inference.py",
+    "poker44_ml/features.py",
+    "poker44_ml/stacked.py",
+    "poker44/validator/payload_view.py"
+  ]
+}
