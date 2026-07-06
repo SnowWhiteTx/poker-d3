@@ -1,19 +1,30 @@
 {
-  "model_name": "poker44-signal-detector",
+  "schema_version": "1",
+  "open_source": true,
+  "model_name": "poker44-behavioral-lgbm",
   "model_version": "1",
-  "framework": "feedforward-mlp",
+  "framework": "mlp-runtime",
   "license": "MIT",
   "repo_url": "https://github.com/IanPereraFlo/poker-d3",
-  "artifact_sha256": "ef6138b0921d26147b0145f8c18eb7329efc2b62dbadca75a271b1c4f0b28fb5",
-  "open_source": true,
-  "inference_mode": "local-joblib",
-  "data_attestation": "No validator-private evaluation labels are used for training. Training uses released benchmark data and local runtime features.",
+  "repo_commit": "",
+  "artifact_sha256": "f541020f17c4ec767ee42c3810bf44fcacdeeee83011cbf094cd9730132c5cd7",
+  "artifact_basename": "current.joblib",
+  "implementation_sha256": "f7e1febdb85b389a3807ae04a86a9e36110e9c460c4d9eabe628cfe3b64c9c53",
   "implementation_files": [
     "neurons/miner.py",
-    "src/poker44_model_base/loader.py",
     "poker44_ml/inference.py",
     "poker44_ml/features.py",
+    "poker44_ml/sequence_model.py",
     "poker44_ml/stacked.py",
+    "poker44_ml/calibration.py",
+    "poker44_ml/batch_calibration.py",
     "poker44/validator/payload_view.py"
-  ]
+  ],
+  "inference_mode": "local-joblib",
+  "training_data_statement": "Trained on the Poker44 public training benchmark (api.poker44.net). No validator-private evaluation data used.",
+  "training_data_sources": [
+    "released_training_benchmark"
+  ],
+  "private_data_attestation": "No validator-private data used. Supervised artifacts use released benchmark labels only.",
+  "data_attestation": "No validator-private data used. Supervised artifacts use released benchmark labels only."
 }
