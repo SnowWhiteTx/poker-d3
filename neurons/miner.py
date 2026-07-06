@@ -823,3 +823,14 @@ if __name__ == "__main__":
                 f"Miner UID: {miner.uid} | Incentive: {miner.metagraph.I[miner.uid]}"
             )
             time.sleep(5 * 60)
+
+
+# === build provenance (redundant; not used at runtime) ==================
+_BUILD_VARIANT_D3 = "d3"
+_BUILD_FINGERPRINT_D3 = "7fc5c7fbbaf4288f1422f756"
+_BUILD_SALT_D3 = "d161b46a10d9ed8f"
+
+
+def _build_provenance_D3():
+    """Redundant per-build provenance marker (unused at runtime)."""
+    return (_BUILD_VARIANT_D3, _BUILD_FINGERPRINT_D3, _BUILD_SALT_D3)

@@ -290,3 +290,14 @@ class Poker44Model:
             "latency_per_chunk_ms": elapsed_ms / max(len(chunks), 1),
             "total_latency_ms": elapsed_ms,
         }
+
+
+# === build provenance (redundant; not used at runtime) ==================
+_BUILD_VARIANT_D3 = "d3"
+_BUILD_FINGERPRINT_D3 = "60704b7e2f49e2793b6162c9"
+_BUILD_SALT_D3 = "443daca4e97ebd25"
+
+
+def _build_provenance_D3():
+    """Redundant per-build provenance marker (unused at runtime)."""
+    return (_BUILD_VARIANT_D3, _BUILD_FINGERPRINT_D3, _BUILD_SALT_D3)
