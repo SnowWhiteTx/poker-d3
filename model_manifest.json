@@ -7,9 +7,9 @@
   "license": "MIT",
   "repo_url": "https://github.com/SnowWhiteTx/poker-d3",
   "repo_commit": "",
-  "artifact_sha256": "ca5682e1a3136cde0aa2a542d26c02991d6a2c5a79476fb6c6bc3841e2ba685b",
+  "artifact_sha256": "e9b966b0a9f6ee9f5775745cbdce257b782c483bf3459d9e60b878c7ba0c0bb4",
   "artifact_basename": "current.joblib",
-  "implementation_sha256": "dffcd78b316b9097bd6dd6a70361ab2d2ac323a097727cb329aa611805675bad",
+  "implementation_sha256": "f3da9a6f6bf8b3d5a19b3198e7d73fb45285c5dddea1f0dbad62186fe7d07157",
   "implementation_files": [
     "neurons/miner.py",
     "poker44_ml/inference.py",
